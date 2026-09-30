@@ -15,7 +15,7 @@
 
 ## 開始跑
 
-需要 Node.js 24。先下載範例：
+需要 Node.js 24。可在 GitHub 按 **Code → Download ZIP**，解壓縮後用終端機進入資料夾，再執行 `npm ci`；有 Git 的話直接跑：
 
 ```bash
 git clone https://github.com/hexschool/aws-week8-ses.git
@@ -95,6 +95,6 @@ npm run check
 | `SignatureDoesNotMatch`／`InvalidClientTokenId` | ID／Secret 是否配對、有沒有填成 SMTP 密碼、Key 是否已停用 |
 | 找不到環境變數 | `.env` 是否在這個資料夾，檔名是否變成 `.env.txt` |
 | 有 MessageId 但沒收到 | 先查垃圾郵件；再查 SES 退信／suppression，不連續重寄 |
-| clone 失敗 | 網址是否正確；若是私有 repo，確認是否已取得讀取權限 |
+| clone 失敗 | 先確認已安裝 Git；也可用 Code → Download ZIP 下載 |
 
 [SES Identity](https://docs.aws.amazon.com/ses/latest/dg/creating-identities.html) · [Sandbox 限制](https://docs.aws.amazon.com/ses/latest/dg/request-production-access.html) · [IAM 寄信權限](https://docs.aws.amazon.com/ses/latest/dg/control-user-access.html)
