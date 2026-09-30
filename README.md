@@ -67,7 +67,7 @@ npm run check
 
 ## 為什麼收到信還有黃色警示？
 
-老師實跑時，信進了 Gmail 收件匣，但 Gmail 提醒無法驗證來源。SES 驗證 Email 是確認你能用這個信箱；不代表你能替 `gmail.com` 設定寄信認證。
+本 Repo 實跑時，信進了 Gmail 收件匣，但 Gmail 提醒無法驗證來源。SES 驗證 Email 是確認你能用這個信箱；不代表你能替 `gmail.com` 設定寄信認證。
 
 這次練習記錄收到的位置與警示即可。正式服務使用自己管理的網域，設定 DKIM 與 DMARC 對齊。[AWS：DMARC 認證](https://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-dmarc.html)
 
