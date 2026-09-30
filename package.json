@@ -1,0 +1,15 @@
+{
+  "name": "livefit-week8-ses",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Week8：用本機 Node.js 透過 Amazon SES 寄信給自己",
+  "engines": { "node": ">=24 <25" },
+  "scripts": {
+    "start": "node send-email.cjs",
+    "check": "node --check send-email.cjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ses": "3.1143.0",
+    "dotenv": "18.0.4"
+  }
+}

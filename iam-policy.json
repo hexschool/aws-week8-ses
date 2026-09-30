@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SendW8EmailToSelf",
+      "Effect": "Allow",
+      "Action": "ses:SendEmail",
+      "Resource": "REPLACE_WITH_IDENTITY_ARN",
+      "Condition": {
+        "StringEquals": { "ses:FromAddress": "you@example.com" },
+        "ForAllValues:StringEquals": { "ses:Recipients": ["you@example.com"] }
+      }
+    }
+  ]
+}
